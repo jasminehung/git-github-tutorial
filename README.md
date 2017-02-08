@@ -9,13 +9,12 @@
 * merge 将数据合并到分支；
 * commit 将文件更改记录到仓库中；
 
-## 指令
+## Git指令
 git bash 中執行
-
-* git init : 新增project (repo)
+* git init : 在本地資料夾新增project (repo)
 * touch: 新增檔案 (如: touch index.html)
 * git add .  : 將目前全部檔案加入索引(待commit)
-* git add (file名) : 
+* git add (file名) : 將單一檔案加入索引(待commit)
 * git status : 索引的狀態(若全部都commit出去了 status就是空的)
 * git commit -m '...備註...': 提交commit
 * mkdir : project中新增folder 如: mkdir css)
@@ -25,6 +24,16 @@ git bash 中執行
  * file_name.html (排除該html檔)
  *  .html (排除所有html檔)
  *  folder_name/ (排除整個folder)
+* git reset HEAD file_name:檔案取消索引
+* git reset HEAD : 全部檔案取消索引
+* git checkout file_name : 還原單一檔案到上次commit的狀態
+* git reset --hard : 還原工作目錄與索引到上次commit的狀態
+
+## github 指令
+1. git clone http://...... : 從github抓到本機
+2. git add .
+3. git commit
+4. git push :更新到遠端資料庫(github)
 
 [A collection of useful .gitignore templates](https://github.com/github/gitignore)
 
@@ -32,7 +41,6 @@ git bash 中執行
 ## Github for Windows 
 
 1.Clone in Desktop
-
 
 * Commit to master : 僅將記錄存放在本機的master branch中，尚未回存到遠端的github 上
 * Sync : 同步到雲端github
@@ -46,4 +54,8 @@ git bash 中執行
 6. Repo擁有者會收到Pull requests, then Merge
 
 ## Reference
-github入門使用介紹: http://blog.kevinlinul.idv.tw/?p=369
+bitbucket : 可開免費private repo
+
+[github入門使用介紹](http://blog.kevinlinul.idv.tw/?p=369)
+[常用 Git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
+[Git命令快速參考](https://backlogtool.com/git-guide/tw/reference/)
