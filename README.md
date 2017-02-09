@@ -41,6 +41,8 @@ HEAD : 目前所在的commit的位置的指標
 * git checkout branch_name : Switch to該branch
 
 
+* git merge branch_name : 合併兩分支
+
 ## github 指令
 1. git clone http://...... : 從github抓到本機
 2. git add .
@@ -67,5 +69,7 @@ HEAD : 目前所在的commit的位置的指標
 bitbucket : 可開免費private repo
 
 [github入門使用介紹](http://blog.kevinlinul.idv.tw/?p=369)
+
 [常用 Git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
+
 [Git命令快速參考](https://backlogtool.com/git-guide/tw/reference/)
