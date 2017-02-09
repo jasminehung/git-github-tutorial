@@ -24,10 +24,22 @@ git bash 中執行
  * file_name.html (排除該html檔)
  *  .html (排除所有html檔)
  *  folder_name/ (排除整個folder)
+ 
+[A collection of useful .gitignore templates](https://github.com/github/gitignore)
+
 * git reset HEAD file_name:檔案取消索引
 * git reset HEAD : 全部檔案取消索引
 * git checkout file_name : 還原單一檔案到上次commit的狀態
 * git reset --hard : 還原工作目錄與索引到上次commit的狀態
+![](https://github.com/jasminehung/github-tutorial/blob/master/branch.png)
+
+HEAD : 目前所在的commit的位置的指標
+* git branch : 列出所有分支，*號標住的是當前所在分支
+* git checkout commit_id之前四碼 : 檢視以前commit版本
+* git checkout master : 切換回最新的master commit
+* git branch new_branch_name : 新增branch
+* git checkout branch_name : Switch to該branch
+
 
 ## github 指令
 1. git clone http://...... : 從github抓到本機
@@ -35,13 +47,11 @@ git bash 中執行
 3. git commit
 4. git push :更新到遠端資料庫(github)
 
-[A collection of useful .gitignore templates](https://github.com/github/gitignore)
 
 
 ## Github for Windows 
 
 1.Clone in Desktop
-
 * Commit to master : 僅將記錄存放在本機的master branch中，尚未回存到遠端的github 上
 * Sync : 同步到雲端github
 
