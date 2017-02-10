@@ -59,7 +59,9 @@ stash: 暫存做到一半的東西，暫存紀錄可帶到其他branch中
 
 
 ## github 指令
-1. git clone http://...... : 從github抓到本機
+1. a. git clone http://...... : 從github抓到本機
+
+  b. git pull : 存下github上最新的code (多人開發時最好每次都先pull)
 2. git add .
 3. git commit
 4. git push :更新到遠端資料庫(github)
@@ -68,6 +70,7 @@ push master以外的branch到github會出現error
 * git remote : 查詢本地有多少遠端數據庫 (clone下來的遠端數據庫github預設叫做origin)
 * git push 遠端主機名稱(github是origin) branch_name : push新的branch到github
 
+未pull就push可能產生衝突
 
 ## Github for Windows 
 1.Clone in Desktop
