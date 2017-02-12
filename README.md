@@ -18,13 +18,14 @@
 * git commit -m '...備註...': 提交commit
 * mkdir : project中新增folder 如: mkdir css)
 * git log : 查詢commit的紀錄
-* 新增.gitignore檔 : 排除要被版控的檔案 [A collection of useful .gitignore templates](https://github.com/github/gitignore)
+
+### 新增.gitignore檔 : 排除要被版控的檔案 [A collection of useful .gitignore templates](https://github.com/github/gitignore)
  * gitignore檔中寫入:
  * file_name.html (排除該html檔)
  *  .html (排除所有html檔)
  *  folder_name/ (排除整個folder)
  
-HEAD : 目前所在的commit的位置的指標
+### HEAD : 目前所在的commit的位置的指標
 * git reset HEAD file_name:檔案取消索引
 * git reset HEAD : 全部檔案取消索引
 * git checkout file_name : 還原單一檔案到上次commit的狀態
@@ -39,7 +40,7 @@ HEAD : 目前所在的commit的位置的指標
 * git checkout branch_name : Switch to該branch
 * git merge branch_name : 合併兩分支，若有衝突會顯示merge conflict，需手動修改
 
-標籤(如version1,version2...)
+### 標籤(如version1,version2...)
 * git tag tag_name : 新增標籤
 * git tag -am "備註" tag_name : 新增有備註的標籤
 * git tag : 查詢標籤
@@ -47,7 +48,7 @@ HEAD : 目前所在的commit的位置的指標
 * git tag -d tag_name : 刪除標籤(不影響commit內容)
 * git checkout tag_name : 切換到該tag的commit
 
-stash: 暫存做到一半的東西，暫存紀錄可帶到其他branch中
+### stash: 暫存做到一半的東西，暫存紀錄可帶到其他branch中
 * git stash : 暫存當前變更 (master中看不到暫存)
 * git stash list : 查看所有stash紀錄 
 * git stash pop : 還原暫存 
@@ -73,7 +74,9 @@ stash: 暫存做到一半的東西，暫存紀錄可帶到其他branch中
 1. Clone in Desktop
 2. Commit to master : 僅將記錄存放在本機的master branch中，尚未回存到遠端的github 上
 3. Sync : 同步到雲端github
+
 * fork : 等同於使用git clone複製他人專案到你的 GitHub 帳號下 (因你沒有權限編輯他人的專案)
+
 ### 多人開發時用
 1. Clone in Desktop
 2. Fork new branch
@@ -81,10 +84,12 @@ stash: 暫存做到一半的東西，暫存紀錄可帶到其他branch中
 4. Sync
 5. Create(Send) pull request
 6. Repo擁有者會收到Pull requests, then Merge
+
 ## Github pages (host your webpages)
 1. create new repo
 2. Settings-Github pages
 3. Source : choose master branch
+
 ## Reference
 bitbucket : 可開免費private repo
 
