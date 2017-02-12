@@ -1,4 +1,4 @@
-# github-tutorial
+# Git & Github tutorial
 ![](https://github.com/jasminehung/github-tutorial/blob/master/git.png)
 
 * repository 仓库，包含文件历史记录和配置信息的数据库，通常含有多个分支；
@@ -19,7 +19,7 @@ git bash 中執行
 * git commit -m '...備註...': 提交commit
 * mkdir : project中新增folder 如: mkdir css)
 * git log : 查詢commit的紀錄
-* touch .gitignore 排除要版控的檔案
+* 新增.gitignore檔 : 排除要被版控的檔案
  * gitignore檔中寫入:
  * file_name.html (排除該html檔)
  *  .html (排除所有html檔)
@@ -27,24 +27,24 @@ git bash 中執行
  
 [A collection of useful .gitignore templates](https://github.com/github/gitignore)
 
+HEAD : 目前所在的commit的位置的指標
 * git reset HEAD file_name:檔案取消索引
 * git reset HEAD : 全部檔案取消索引
 * git checkout file_name : 還原單一檔案到上次commit的狀態
 * git reset --hard : 還原工作目錄與索引到上次commit的狀態
+
 ![](https://github.com/jasminehung/github-tutorial/blob/master/branch.png)
 
-HEAD : 目前所在的commit的位置的指標
 * git branch : 列出所有分支，*號標住的是當前所在分支
 * git checkout commit_id之前四碼 : 檢視以前commit版本
 * git checkout master : 切換回最新的master commit
 * git branch new_branch_name : 新增branch
 * git checkout branch_name : Switch to該branch
-
 * git merge branch_name : 合併兩分支，若有衝突會顯示merge conflict，需手動修改
 
 標籤(如version1,version2...)
-* git tag tag_name :  新增標籤
-* git tag -am "備註" tag_name :  新增有備註的標籤
+* git tag tag_name : 新增標籤
+* git tag -am "備註" tag_name : 新增有備註的標籤
 * git tag : 查詢標籤
 * git tag 0n : 查詢詳細標籤
 * git tag -d tag_name : 刪除標籤(不影響commit內容)
@@ -58,7 +58,7 @@ stash: 暫存做到一半的東西，暫存紀錄可帶到其他branch中
 * git stash clear :  清除all暫存
 
 
-## github 指令
+## Github 指令
 1. a. git clone http://...... : 從github抓到本機
 
   b. git pull : 存下github上最新的code (多人開發時最好每次都先pull)
@@ -72,10 +72,17 @@ push master以外的branch到github會出現error
 
 未pull就push可能產生衝突
 
+
+## Github pages
+
+1. create new repo
+2. Settings-Github pages
+3. Source : choose master branch
+
 ## Github for Windows 
-1.Clone in Desktop
-* Commit to master : 僅將記錄存放在本機的master branch中，尚未回存到遠端的github 上
-* Sync : 同步到雲端github
+1. Clone in Desktop
+2. Commit to master : 僅將記錄存放在本機的master branch中，尚未回存到遠端的github 上
+3. Sync : 同步到雲端github
 
 ### 多人開發時用
 1. Clone in Desktop
